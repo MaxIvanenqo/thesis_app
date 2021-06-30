@@ -1,0 +1,6 @@
+#main-picture-bg{
+    -fx-background-image: url("../img/about/bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-effect: dropshadow( three-pass-box , rgba(17, 17, 17, 0.6) , 5, 0.0 , 0 , 1 );
+}

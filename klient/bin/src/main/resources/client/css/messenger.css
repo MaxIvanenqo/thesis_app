@@ -1,0 +1,127 @@
+.messenger-bg{
+    -fx-background-image: url("../img/messenger/bg.jpg");
+    -fx-background-size: cover;
+    -fx-effect: dropshadow( three-pass-box , rgba(17, 17, 17, 0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.send-msg-button{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/messenger/send.png");
+    -fx-background-size: cover;
+}
+
+.send-msg-button:focused,
+.send-msg-button:hover{
+    -fx-background-image: url("../img/messenger/send-hovered.png");
+    -fx-background-size: cover;
+}
+
+#delete-all-msg{
+    -fx-background-image: url("../img/messenger/fire.png");
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+}
+
+#close-dialog-pane{
+    -fx-background-image: url("../img/messenger/close.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-size: 20px 20px;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+#delete-all-msg:focused,
+#delete-add-msg:hover{
+    -fx-background-image: url("../img/messenger/fire-hovered.png");
+    -fx-background-size: cover;
+}
+
+#file-attach > .arrow-button,
+#file-attach > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+#file-attach{
+    -fx-background-image: url("../img/messenger/attach.png");
+    -fx-background-size: 25px 25px;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.more-btn{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/messenger/message/more.png");
+    -fx-background-size: 20px 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.more-btn > .arrow-button,
+.more-btn > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+.received-message{
+    -fx-background-color: rgba(215, 250, 255, 0.5);
+    -fx-background-radius: 0 0 10px 10px;
+    -fx-border-radius: 0 0 10px 10px;
+}
+
+
+
+.msg-scroll-pane{
+    -fx-background-color: #fff;
+    -fx-focus-color: transparent; 
+  }
+.msg-header{
+    -fx-background-color: #fff;
+}
+
+.sent-message{
+    -fx-background-color: rgba(230, 230, 230, 0.5);
+    -fx-background-radius: 0 0 10px 10px;
+    -fx-border-radius: 0 0 10px 10px;
+}
+
+.contact-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.contact-btn:focused,
+.contact-btn:hover{
+    -fx-background-color: rgba(255, 115, 0, 0.5);
+}
+
+.choosen-file-attachment{
+    -fx-background-color: transparent;
+    -fx-background-size: 40px 40px;
+    -fx-background-attachment: center left;
+    -fx-cursor: hand;
+    -fx-background-image: url("../img/messenger/file.png");
+    -fx-background-repeat: no-repeat;
+}
+
+.attachment-pre-send{
+    -fx-background-color: transparent;
+    -fx-background-size: 28px 30px;
+    -fx-background-attachment: center left;
+    -fx-cursor: hand;
+    -fx-background-image: url("../img/messenger/file.png");
+    -fx-background-repeat: no-repeat;
+}
+
+.delete-attachment-btn{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/messenger/minus.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.dialog-pane-cloak{
+    -fx-background-color: #fff;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="800.0" stylesheets="@../css/devices.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.included.DevicesController">
+   <children>
+      <HBox id="main-picture-bg" alignment="CENTER" layoutX="250.0" prefHeight="156.0" prefWidth="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <ScrollPane fx:id="scrollPaneDevices" fitToWidth="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="220.0">
+         <content>
+            <AnchorPane styleClass="scrollpane">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <VBox fx:id="devicesBox" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="60.0" layoutY="-2.0" text="Zarejestrowane urządzenia">
+         <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="KacstLetter" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="116.0" layoutX="80.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/preferences/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="190.0" layoutY="140.0" prefHeight="16.0" prefWidth="231.0" text="User Name">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="170.0" prefHeight="20.0" prefWidth="294.0" text="liczba zarejestrowanych urządzeń: ">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="devicesCount" layoutX="470.0" layoutY="170.0" text="N">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="60.0" />
+   </padding>
+</AnchorPane>

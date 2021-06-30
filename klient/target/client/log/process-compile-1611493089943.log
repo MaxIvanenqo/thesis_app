@@ -1,0 +1,31 @@
+Process
+=======
+compile
+
+Command Line
+============
+/usr/lib/jvm/graalvm/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/reflectionconfig-x86_64-linux.json -H:JNIConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/jniconfig-x86_64-linux.json -H:ResourceConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/resourceconfig-x86_64-linux.json -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AMD64 -cp /tmp/classpathJar3090919625894771127.jar client.App
+
+Output
+======
+[client.app:19749]    classlist:   4,343.25 ms,  0.96 GB
+[client.app:19749]        (cap):   1,531.84 ms,  0.96 GB
+[client.app:19749]        setup:   4,304.54 ms,  0.96 GB
+[client.app:19749]     (clinit):   1,252.06 ms,  3.12 GB
+[client.app:19749]   (typeflow):  43,801.18 ms,  3.12 GB
+[client.app:19749]    (objects):  52,793.99 ms,  3.12 GB
+[client.app:19749]   (features):   4,523.16 ms,  3.12 GB
+[client.app:19749]     analysis: 105,347.11 ms,  3.12 GB
+[client.app:19749]     universe:   2,935.61 ms,  3.11 GB
+[client.app:19749]      (parse):  14,333.50 ms,  3.12 GB
+[client.app:19749]     (inline):  23,844.05 ms,  3.86 GB
+[client.app:19749]    (compile):  98,052.41 ms,  3.97 GB
+[client.app:19749]      compile: 139,752.97 ms,  3.97 GB
+[client.app:19749]        image:   7,965.65 ms,  3.98 GB
+[client.app:19749]        write:  15,857.28 ms,  4.03 GB
+[client.app:19749]      [total]: 281,245.02 ms,  4.03 GB
+
+
+Result
+======
+result: 0

@@ -1,0 +1,87 @@
+#root-login{
+  -fx-background-image: url("../img/login/login-bg.jpg");
+}
+
+.auth_fields_container{
+  -fx-padding: 10px;
+}
+
+.title{
+  -fx-text-fill: #000;
+  -fx-font-size: 1.5em;
+  -fx-font-family: Arial, "sans-serif";
+  -fx-alignment: center;
+  -fx-padding: 0 0 10px 0;
+}
+
+.strong{
+  -fx-font-weight: bold;
+}
+
+.centered{
+  -fx-alignment: center;
+}
+
+.highlighted{
+  -fx-text-fill: rgb(18, 1, 59);
+}
+
+.info-box{
+  -fx-padding: 0 0 20px 0;
+}
+
+.label{
+  -fx-padding: 10px 0 2px;
+  -fx-border-insets: 5px 0 2px;
+  -fx-background-insets: 5px 0 2px;
+}
+
+.input{
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0;
+}
+.input:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.auth_btn_container{
+  -fx-padding: 20px 0
+}
+
+.auth_btn_step{
+  -fx-background-color: 
+      linear-gradient(#195f70, #145869),
+      linear-gradient(#145869 0%, #195d7c 20%, #145869 100%),
+      linear-gradient(#185c6d 0%, #195d7c 50%);
+  -fx-background-radius: 8,7,6;
+  -fx-background-insets: 0,1,2;
+  -fx-text-fill: black;
+  -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+  -fx-text-fill: #fff;
+  -fx-cursor: hand;
+}
+
+.auth_btn_other_option{
+  -fx-background-color: 
+    linear-gradient(#f2f2f2, #d6d6d6),
+    linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+    linear-gradient(#dddddd 0%, #f6f6f6 50%);
+  -fx-background-radius: 8,7,6;
+  -fx-background-insets: 0,1,2;
+  -fx-text-fill: black;
+  -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+  -fx-cursor: hand;
+}
+
+.minimize-window-btn{
+  -fx-background-image: url("../img/login/minimize.png");
+  -fx-background-size: cover;
+  -fx-background-color: transparent;
+}
+
+.close-app-btn{
+  -fx-background-image: url("../img/login/close.png");
+  -fx-background-size: cover;
+  -fx-background-color: transparent;
+}

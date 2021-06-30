@@ -1,0 +1,15 @@
+Process
+=======
+link
+
+Command Line
+============
+gcc /home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/myApp/launcher.o /home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/tmp/SVM-1611494813952/client.app.o -Wl,-Bstatic -ljava -lnio -lzip -lnet -lprefs -ljvm -lj2pkcs11 -lsunec -lextnet -lfdlibm -llibchelper -Wl,-Bdynamic -lz -ldl -lstdc++ -lpthread -rdynamic -Wl,--whole-archive -lprism_es2 -lglass -lglassgtk3 -ljavafx_font -ljavafx_font_freetype -ljavafx_font_pango -ljavafx_iio -Wl,--no-whole-archive -Wl,--no-whole-archive -lGL -lX11 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lfreetype -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz -lfontconfig -lfreetype -lgstreamer-lite -lgthread-2.0 -pthread -lglib-2.0 -lstdc++ -lz -lXtst -lavcodec -lavformat -lavutil -lasound -lm -lgmodule-2.0 -pthread -lglib-2.0 -o /home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/myApp -L/home/maxivanenqo/.gluon/substrate/javafxStaticSdk/16-ea+gvm24/linux-x86_64/sdk/lib -L/usr/lib/jvm/graalvm/lib/svm/clibraries/linux-amd64 -L/usr/lib/jvm/graalvm/lib/static/linux-amd64/glibc
+
+Output
+======
+
+
+Result
+======
+result: 0

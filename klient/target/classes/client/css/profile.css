@@ -1,0 +1,98 @@
+#main-picture-bg{
+    -fx-background-image: url("../img/profile/bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-effect: dropshadow( three-pass-box , rgba(17, 17, 17, 0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.contact-data-vbox{
+    -fx-padding: 5px 10px;
+}
+
+.contact-image-btn{
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.profile-text-field{
+    -fx-background-color: transparent ;
+}
+
+.close-edit-box{
+    -fx-background-image: url("../img/profile/close.png");
+    -fx-background-color: transparent;
+}
+
+.field-edit-btn{
+    -fx-background-color: 
+        linear-gradient(#195f70, #145869),
+        linear-gradient(#145869 0%, #195d7c 20%, #145869 100%),
+        linear-gradient(#185c6d 0%, #195d7c 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+
+.edit-box{
+    -fx-background-color: rgb(238, 238, 238);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.edit-btn{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/profile/edit.png");
+    -fx-background-size: 24px 24px;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-cursor: hand;
+}
+
+.edit-btn:focused,
+.edit-btn:hover
+{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/profile/edit-hovered.png")
+}
+
+.search{
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0;
+}
+.search:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.autocomplete-find-btn{
+    -fx-background-color: #fff;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.autocomplete-find-btn:hover{
+    -fx-underline: true;
+}
+
+.add-contacts-btn{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/profile/profile-add-to-contacts.png");
+    -fx-background-size: cover;
+    -fx-cursor: hand;
+}
+
+.remove-contacts-btn{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/profile/profile-delete-from-contacts.png");
+    -fx-background-size: cover;
+    -fx-cursor: hand;
+}
+
+.ctart-chat-btn{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../img/profile/chat.png");
+    -fx-background-size: cover;
+}

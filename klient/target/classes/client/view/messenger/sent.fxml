@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="msgBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="msg-box" stylesheets="@../../css/messenger.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.included.message.MessageDetailedController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="5.0" styleClass="msg-header">
+         <children>
+            <Label fx:id="name" text="Ty">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="9.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" text="01.01.2021">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="9.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" text="00:00">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="9.0" />
+               </font>
+            </Label>
+            <Label text=":">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="12.0" />
+               </font>
+            </Label>
+            <Pane HBox.hgrow="ALWAYS" />
+            <MenuButton contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefWidth="20.0" styleClass="more-btn" text="MenuButton">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#copyToClipboard" text="Kopuj">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/messenger/message/copy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+               </items>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MenuButton>
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="msg" alignment="TOP_LEFT" maxWidth="600.0" minWidth="250.0" styleClass="sent-message" text="Label" wrapText="true" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="DejaVu Sans ExtraLight" size="13.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <VBox fx:id="attachments" prefWidth="100.0" />
+   </children>
+</VBox>

@@ -1,0 +1,5 @@
+#preferences-bg{
+    -fx-background-image: url("../img/preferences/bg.jpg");
+    -fx-background-size: cover;
+    -fx-effect: dropshadow( three-pass-box , rgba(17, 17, 17, 0.6) , 5, 0.0 , 0 , 1 );
+}

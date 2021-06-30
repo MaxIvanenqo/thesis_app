@@ -1,0 +1,18 @@
+Process
+=======
+compile
+
+Command Line
+============
+/usr/lib/jvm/graalvm/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/reflectionconfig-x86_64-linux.json -H:JNIConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/jniconfig-x86_64-linux.json -H:ResourceConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/resourceconfig-x86_64-linux.json -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AMD64 -cp /tmp/classpathJar973744536154182910.jar client.App
+
+Output
+======
+[client.app:18553]    classlist:  18,507.80 ms,  0.96 GB
+[client.app:18553]        (cap):   1,463.61 ms,  0.96 GB
+[client.app:18553]        setup:   7,421.32 ms,  0.96 GB
+
+
+Result
+======
+result: 130

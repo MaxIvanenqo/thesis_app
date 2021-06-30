@@ -1,0 +1,31 @@
+Process
+=======
+compile
+
+Command Line
+============
+/usr/lib/jvm/graalvm/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/reflectionconfig-x86_64-linux.json -H:JNIConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/jniconfig-x86_64-linux.json -H:ResourceConfigurationFiles=/home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/resourceconfig-x86_64-linux.json -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AMD64 -cp /tmp/classpathJar6714883422024002567.jar client.App
+
+Output
+======
+[client.app:5067]    classlist:  14,418.93 ms,  0.96 GB
+[client.app:5067]        (cap):   1,851.01 ms,  0.96 GB
+[client.app:5067]        setup:  10,144.00 ms,  0.96 GB
+[client.app:5067]     (clinit):   1,268.23 ms,  3.04 GB
+[client.app:5067]   (typeflow):  54,706.83 ms,  3.04 GB
+[client.app:5067]    (objects):  60,105.48 ms,  3.04 GB
+[client.app:5067]   (features):   5,973.29 ms,  3.04 GB
+[client.app:5067]     analysis: 125,389.06 ms,  3.04 GB
+[client.app:5067]     universe:   3,546.57 ms,  3.04 GB
+[client.app:5067]      (parse):  24,494.63 ms,  3.81 GB
+[client.app:5067]     (inline):  29,479.65 ms,  3.75 GB
+[client.app:5067]    (compile): 104,678.97 ms,  3.97 GB
+[client.app:5067]      compile: 162,613.61 ms,  3.97 GB
+[client.app:5067]        image:  10,321.28 ms,  3.85 GB
+[client.app:5067]        write:   4,134.99 ms,  3.85 GB
+[client.app:5067]      [total]: 332,400.12 ms,  3.85 GB
+
+
+Result
+======
+result: 0

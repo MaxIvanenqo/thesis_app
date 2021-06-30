@@ -1,0 +1,37 @@
+#main-picture-bg{
+    -fx-background-image: url("../img/contacts/bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-effect: dropshadow( three-pass-box , rgba(17, 17, 17, 0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#contacts-input{
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+#contacts-input:focused,
+#contacts-input:hover {
+    -fx-background-color: -fx-focus-color, -fx-background;
+}
+
+
+.search{
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0;
+}
+.search:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+.show-profile-btn{
+    -fx-background-color: transparent;
+}
+
+.autocomplete-find-btn{
+    -fx-background-color: #fff;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}

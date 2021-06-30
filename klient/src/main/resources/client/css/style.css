@@ -1,0 +1,72 @@
+#root-main{
+  -fx-background-image: url("../img/bg-root.jpg");
+  -fx-background-size: cover;
+}
+
+.menu_btn{
+  -fx-background-color: linear-gradient(to right, #0272b3, #236896);
+  -fx-text-fill: #fff;
+  -fx-padding: 6px;
+  -fx-effect: dropshadow( three-pass-box , rgba(17, 17, 17, 0.6) , 5, 0.0 , 0 , 1 );
+  -fx-cursor: hand;
+  -fx-background-size: 20px 20px;
+  -fx-background-position: right;
+  -fx-background-repeat: no-repeat;
+}
+
+#profil_menu-btn{
+  -fx-background-image: url("../img/menu/user.png");
+}
+
+#messenger_menu-btn{
+  -fx-background-image: url("../img/menu/chat.png");
+}
+
+#contacts_menu-btn{
+  -fx-background-image: url("../img/menu/contacts.png");
+}
+
+#devices_menu-btn{
+  -fx-background-image: url("../img/menu/devices.png");
+}
+
+#preferences_menu-btn{
+  -fx-background-image: url("../img/menu/preferences.png");
+}
+
+#about_menu-btn{
+  -fx-background-image: url("../img/menu/about.png");
+}
+
+#logout_menu-btn{
+  -fx-background-image: url("../img/menu/logout.png");
+}
+
+#profil_menu-btn{
+  -fx-background-image: url("../img/menu/user.png");
+}
+
+.menu_btn:hover,
+.menu_btn:focused{
+  -fx-background-color: linear-gradient(to right, #02b346, #23962d);
+  -fx-text-fill: #fff;
+}
+
+.menu_parent{
+  -fx-background-image: url("../img/bg-menu.jpg");
+  -fx-background-size: 50px 100%;
+  -fx-background-repeat: no-repeat;
+}
+
+#menu-button{
+  -fx-background-color: transparent;
+  -fx-border-color: rgb(228, 228, 228);
+  -fx-border-radius: 42px;
+  -fx-cursor: hand;
+}
+
+
+#menu-button > .arrow-button,
+#menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}

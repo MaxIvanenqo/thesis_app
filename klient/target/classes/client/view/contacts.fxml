@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contacts" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="800.0" style="-fx-background-color: #fff;" stylesheets="@../css/contacts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.included.Contacts">
+   <children>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="215.0">
+         <children>
+            <ScrollPane fx:id="scrollPaneContacts" prefHeight="150.0" prefWidth="527.0">
+               <content>
+                  <AnchorPane prefWidth="505.0" styleClass="scrollpane">
+                     <children>
+                        <VBox fx:id="contactsField" layoutY="-8.0" spacing="4.0" styleClass="contact-list-wrapper" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <AnchorPane fx:id="contactsListHide" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="385.0" prefWidth="384.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/contacts/no-contacts.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="BRAK KONTAKTÓW">
+                                 <font>
+                                    <Font name="DejaVu Sans ExtraLight" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label lineSpacing="20.0" text="Znajdź kontakty poprzez wyszukiwarkę powyżej" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="DejaVu Sans ExtraLight" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Label layoutX="60.0" layoutY="-2.0" text="Kontakty">
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="KacstLetter" size="17.0" />
+         </font>
+      </Label>
+      <HBox id="main-picture-bg" layoutX="10.0" layoutY="65.0" prefHeight="156.0" stylesheets="@../css/contacts.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <Pane layoutX="45.0" layoutY="60.0" prefHeight="54.0" prefWidth="483.0" AnchorPane.leftAnchor="35.0">
+         <children>
+            <Label text="Szukaj użytkownika (numer telefonu, email adres, imię lub nazwisko)">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="contacts-input" fx:id="searchProfileTextField" alignment="TOP_LEFT" layoutX="30.0" layoutY="26.0" prefHeight="28.0" prefWidth="200.0">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/contacts/icons8-search-client-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox fx:id="findAutocompleteBox" layoutX="25.0" layoutY="75.0" prefHeight="69.0" prefWidth="220.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="110.0" />
+   </children>
+   <padding>
+      <Insets left="60.0" />
+   </padding>
+</AnchorPane>

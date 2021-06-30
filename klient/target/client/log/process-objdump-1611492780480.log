@@ -1,0 +1,16 @@
+Process
+=======
+objdump
+
+Command Line
+============
+objdump -f /home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/lib/libjnidispatch.a
+
+Output
+======
+objdump: /home/maxivanenqo/Documents/projects/thesisClient/target/client/x86_64-linux/gvm/lib/libjnidispatch.a: file format not recognized
+
+
+Result
+======
+result: 1

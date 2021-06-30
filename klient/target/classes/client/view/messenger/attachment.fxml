@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+
+<Button minWidth="70.0" mnemonicParsing="false" prefHeight="30.0" styleClass="attachment-pre-send" stylesheets="@../../css/messenger.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets left="36.0" right="10.0" />
+   </padding>
+</Button>
